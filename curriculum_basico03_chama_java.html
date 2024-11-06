@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Edson Vaz Lopes</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <style>
+        /* Estilos para a pop-up */
+        .modal {
+            display: none; /* Oculta a modal por padrão */
+            position: fixed; /* Fixa a modal na tela */
+            z-index: 1; /* Coloca a modal acima de outros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Largura total da tela */
+            height: 100%; /* Altura total da tela */
+            overflow: auto; /* Adiciona rolagem se necessário */
+            background-color: rgba(0, 0, 0, 0.4); /* Fundo transparente */
+        }
+
+        .modal-content {
+            background-color: #fefefe; /* Cor de fundo da modal */
+            margin: 15% auto; /* Centraliza a modal */
+            padding: 20px; /* Espaçamento interno da modal */
+            border: 1px solid #888; /* Borda da modal */
+            width: 80%; /* Largura da modal */
+        }
+
+        .close {
+            color: #aaa; /* Cor do "X" */
+            float: right; /* Alinha à direita */
+            font-size: 28px; /* Tamanho da fonte do "X" */
+            font-weight: bold; /* Negrito */
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black; /* Cor do "X" ao passar o mouse */
+            text-decoration: none; /* Remove sublinhado */
+            cursor: pointer; /* Cursor pointer */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Edson Vaz Lopes</div>
+    <div class="container">
+        <img src="minha_foto.JPG" alt="Foto de Edson Vaz Lopes" class="profile-pic">
+        <a href="#" class="button" id="downloadButton">Baixar Currículo</a>
+        
+        <!-- Modal de confirmação -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Aviso</h2>
+                <p>Você está prestes a abrir o currículo. Você concorda?</p>
+                <button id="agreeButton">Concordo</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Informações Pessoais</h2>
+            <p>Av. Marquês de Olinda, 1821. Joinville, SC.</p>
+            <p>Idade: 39 anos. Estado civil: Casado.</p>
+            <p>Celular: (47) 99218 7114. E-mail: <a href="mailto:edsonvazlopes@protonmail.com">edsonvazlopes@protonmail.com</a></p>
+        </div>
+        <div class="section">
+            <h2>Formação Acadêmica</h2>
+            <p>Mestre em Ensino de Física: Universidade Estadual de Santa Catarina (UDESC), 2022.</p>
+            <p>Graduado em Física: UDESC, 2018.</p>
+        </div>
+        <div class="section">
+            <h2>Experiência</h2>
+            <p>Professor de Física, Secretaria Estadual do Ensino, desde 2018.</p>
+            <p>Instrutor de Programação e Robótica, Sociedade Educacional Santo Antônio, desde 2023.</p>
+        </div>
+        <div class="section">
+            <h2>Habilidades Extras</h2>
+            <ul>
+                <li>Eletrônica e robótica educacional</li>
+                <li>Programação em Fortran, C e Python</li>
+                <li>Professor de música multi-instrumentista</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Link para os arquivos JavaScript -->
+    <script src="script.js"></script>
+    <script src="alert.js"></script> <!-- Chama o script externo -->
+</body>
+</html>

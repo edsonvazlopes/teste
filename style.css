@@ -1,0 +1,68 @@
+/* Estilos básicos para corpo e textos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Estilo do container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo da imagem de perfil */
+.profile-pic {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    border-radius: 50%; /* Deixa a imagem circular */
+    margin-top: 20px;
+    object-fit: cover; /* Ajusta a imagem dentro da borda */
+}
+
+/* Estilo para as seções */
+.section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left; /* Alinhamento do texto */
+}
+
+/* Estilo para os títulos das seções */
+.section h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo para os links */
+a {
+    color: #2107e7;
+    text-decoration: none;
+}
+
+/* Estilo simples para botão */
+.button {
+    display: block;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    text-decoration: none;
+}
